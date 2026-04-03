@@ -103,7 +103,7 @@
 </head>
 <body>
 <div class="container">
-    <h2>➕ Registrar Cliente</h2>
+    <h2>Registrar Cliente</h2>
 
     <c:if test="${not empty error}">
         <div class="alert-error">
@@ -164,7 +164,7 @@
         </div>
 
         <div class="actions">
-            <button type="submit" class="btn btn-primary">💾 Guardar</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
             <a href="${ctx}/clientes?accion=listar" class="btn btn-secondary">Cancelar</a>
         </div>
     </form>

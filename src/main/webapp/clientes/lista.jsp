@@ -108,8 +108,8 @@
 <body>
 <div class="container">
     <div class="topbar">
-        <h2>📋 Clientes – Lectura Viva</h2>
-        <a href="${ctx}/clientes?accion=nuevo" class="btn btn-primary">➕ Nuevo Cliente</a>
+        <h2>Clientes – Lectura Viva</h2>
+        <a href="${ctx}/clientes?accion=nuevo" class="btn btn-primary">Nuevo Cliente</a>
     </div>
 
     <div class="table-wrap">
@@ -156,11 +156,11 @@
                                 </c:choose>
                             </td>
                             <td class="acciones">
-                                <a class="editar" href="${ctx}/clientes?accion=editar&id=${c.id}">✏️ Editar</a>
+                                <a class="editar" href="${ctx}/clientes?accion=editar&id=${c.id}">Editar</a>
                                 <a class="eliminar"
                                    href="${ctx}/clientes?accion=eliminar&id=${c.id}"
                                    onclick="return confirm('¿Seguro que deseas eliminar este cliente?');">
-                                    🗑️ Eliminar
+                                     Eliminar
                                 </a>
                             </td>
                         </tr>

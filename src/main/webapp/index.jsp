@@ -111,7 +111,7 @@
 </head>
 <body>
     <div class="container">
-        <h1> Respuesta pregunta 1</h1>
+        <h1>📚 Respuesta pregunta 1</h1>
         <p class="subtitle">Flujo de funcionamiento entre Cliente, Servlet, JSP y Respuesta</p>
 
         <div class="bloque">
@@ -157,8 +157,8 @@
 
         <div class="acciones">
             <div class="titulo-sistema">Sistema de Clientes – Librería Viva</div>
-            <a href="${ctx}/clientes?accion=listar" class="btn btn-ver">👥 Ver Clientes</a>
-            <a href="${ctx}/clientes?accion=listar" class="btn btn-editar">✏️ Editar Clientes</a>
+            <a href="${ctx}/clientes?accion=listar" class="btn btn-ver">Ver Clientes</a>
+            <a href="${ctx}/clientes?accion=listar" class="btn btn-editar">Editar Clientes</a>
         </div>
     </div>
 </body>

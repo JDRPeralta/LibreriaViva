@@ -103,7 +103,7 @@
 </head>
 <body>
 <div class="container">
-    <h2>✏️ Editar Cliente</h2>
+    <h2>Editar Cliente</h2>
 
     <c:if test="${not empty error}">
         <div class="alert-error">

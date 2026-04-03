@@ -126,7 +126,7 @@
         <div class="bloque">
             <h2>2. Servlet (El cerebro / El mozo)</h2>
             <p>
-                Tu controlador (como tu ClienteController) recibe el aviso. Es el código Java
+                Tu controlador (como ClienteController) recibe el aviso. Es el código Java
                 que hace el trabajo pesado: va a la base de datos, saca toda la lista de clientes
                 y dice: "Listo, ya tengo los datos crudos, ahora se los paso al JSP para que los ponga bonitos".
             </p>

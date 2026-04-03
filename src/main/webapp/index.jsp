@@ -111,7 +111,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>📚 Respuesta pregunta 1</h1>
+        <h1> Respuesta pregunta 1</h1>
         <p class="subtitle">Flujo de funcionamiento entre Cliente, Servlet, JSP y Respuesta</p>
 
         <div class="bloque">
@@ -126,7 +126,7 @@
         <div class="bloque">
             <h2>2. Servlet (El cerebro / El mozo)</h2>
             <p>
-                Tu controlador (como ClienteController) recibe el aviso. Es el código Java
+                El controlador (como ClienteController) recibe el aviso. Es el código Java
                 que hace el trabajo pesado: va a la base de datos, saca toda la lista de clientes
                 y dice: "Listo, ya tengo los datos crudos, ahora se los paso al JSP para que los ponga bonitos".
             </p>
@@ -135,7 +135,7 @@
         <div class="bloque">
             <h2>3. JSP (El diseñador / El chef)</h2>
             <p>
-                Tu archivo lista.jsp recibe esa información. Como el JSP, agarra esos datos crudos
+                El archivo lista.jsp recibe esa información. Como el JSP, agarra esos datos crudos
                 y los va acomodando. Dibuja la tabla, pone los títulos, los botones de editar/eliminar,
                 y transforma todo en una página web.
             </p>

@@ -8,114 +8,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lectura Viva</title>
+    <title>Lectura Viva - Respuesta Pregunta 1</title>
     <style>
         * { box-sizing: border-box; }
 
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #eef4ff, #f9fbff);
-            color: #2c3e50;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background: #f4f7fb;
+            color: #333;
         }
 
         .container {
-            width: 100%;
-            max-width: 700px;
-            background: #ffffff;
-            padding: 40px 32px;
-            border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(0,0,0,.08);
-            text-align: center;
-        }
-
-        .icono {
-            font-size: 52px;
-            margin-bottom: 10px;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,.08);
         }
 
         h1 {
-            margin: 0 0 12px 0;
-            font-size: 32px;
+            margin-top: 0;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #5b6777;
+            margin-bottom: 30px;
+        }
+
+        .bloque {
+            background: #f9fbff;
+            border-left: 6px solid #4a90d9;
+            padding: 18px;
+            margin-bottom: 18px;
+            border-radius: 10px;
+        }
+
+        .bloque h2 {
+            margin-top: 0;
+            font-size: 20px;
             color: #1f3b5b;
         }
 
-        p {
-            margin: 0 0 28px 0;
-            font-size: 16px;
-            color: #5b6777;
-            line-height: 1.6;
+        .bloque p {
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        .resumen {
+            background: #eef6ff;
+            border: 1px solid #cfe2ff;
+            padding: 18px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: #1d4f91;
+            margin-top: 25px;
         }
 
         .acciones {
-            display: flex;
-            justify-content: center;
-            gap: 14px;
-            flex-wrap: wrap;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .titulo-sistema {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 16px;
         }
 
         .btn {
             display: inline-block;
             padding: 12px 18px;
-            border-radius: 10px;
+            margin: 6px;
+            color: white;
             text-decoration: none;
+            border-radius: 10px;
             font-weight: bold;
-            font-size: 15px;
             transition: .2s ease;
         }
 
-        .btn-primary {
+        .btn-ver {
             background: #4a90d9;
-            color: white;
         }
 
-        .btn-primary:hover {
+        .btn-ver:hover {
             background: #357abd;
-            transform: translateY(-1px);
         }
 
-        .btn-secondary {
-            background: #eef2f7;
-            color: #2c3e50;
+        .btn-editar {
+            background: #f59e0b;
         }
 
-        .btn-secondary:hover {
-            background: #dde6f1;
-            transform: translateY(-1px);
-        }
-
-        .footer-note {
-            margin-top: 26px;
-            font-size: 13px;
-            color: #7b8794;
+        .btn-editar:hover {
+            background: #d97706;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="icono">📚</div>
-        <h1>Librería Lectura Viva</h1>
-        <p>
-            Bienvenido al sistema de gestión. Desde aquí puedes administrar
-            la información de los clientes de forma rápida y ordenada.
-        </p>
+        <h1>📚 Respuesta pregunta 1</h1>
+        <p class="subtitle">Flujo de funcionamiento entre Cliente, Servlet, JSP y Respuesta</p>
 
-        <div class="acciones">
-            <a href="${ctx}/clientes?accion=listar" class="btn btn-primary">
-                👥 Gestionar Clientes
-            </a>
-
-            <a href="${ctx}/clientes?accion=nuevo" class="btn btn-secondary">
-                ➕ Nuevo Cliente
-            </a>
+        <div class="bloque">
+            <h2>1. Cliente (El que pide)</h2>
+            <p>
+                Alguien entra a su navegador web y le da clic al botón "Ver Clientes".
+                Eso genera una petición (un aviso) que viaja por internet hasta el servidor diciendo:
+                "Oye, quiero ver la lista".
+            </p>
         </div>
 
-        <div class="footer-note">
-            Evaluación T1 de Juan Diego Romero Peralta
+        <div class="bloque">
+            <h2>2. Servlet (El cerebro / El mozo)</h2>
+            <p>
+                Tu controlador (como tu ClienteController) recibe el aviso. Es el código Java
+                que hace el trabajo pesado: va a la base de datos, saca toda la lista de clientes
+                y dice: "Listo, ya tengo los datos crudos, ahora se los paso al JSP para que los ponga bonitos".
+            </p>
+        </div>
+
+        <div class="bloque">
+            <h2>3. JSP (El diseñador / El chef)</h2>
+            <p>
+                Tu archivo lista.jsp recibe esa información. Como el JSP, agarra esos datos crudos
+                y los va acomodando. Dibuja la tabla, pone los títulos, los botones de editar/eliminar,
+                y transforma todo en una página web.
+            </p>
+        </div>
+
+        <div class="bloque">
+            <h2>4. Respuesta (El plato servido)</h2>
+            <p>
+                El servidor agarra esa página ya terminada (convertida en HTML puro) y se la devuelve
+                al navegador. El usuario finalmente ve su lista de clientes en la pantalla.
+                ¡Y ya está, ciclo terminado!
+            </p>
+        </div>
+
+        <div class="resumen">
+            Básicamente es: Pides algo (Cliente) -> Java hace el trabajo sucio (Servlet)
+            -> Se arma el diseño (JSP) -> Lo ves en pantalla (Respuesta).
+        </div>
+
+        <div class="acciones">
+            <div class="titulo-sistema">Sistema de Clientes – Librería Viva</div>
+            <a href="${ctx}/clientes?accion=listar" class="btn btn-ver">👥 Ver Clientes</a>
+            <a href="${ctx}/clientes?accion=listar" class="btn btn-editar">✏️ Editar Clientes</a>
         </div>
     </div>
 </body>

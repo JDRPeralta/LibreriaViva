@@ -111,7 +111,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>📚 Respuesta pregunta 1</h1>
+        <h1>Respuesta pregunta 1</h1>
         <p class="subtitle">Flujo de funcionamiento entre Cliente, Servlet, JSP y Respuesta</p>
 
         <div class="bloque">
